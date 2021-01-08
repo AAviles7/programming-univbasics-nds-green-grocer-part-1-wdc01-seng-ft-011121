@@ -27,7 +27,7 @@ def consolidate_cart(cart)
       ans.push(cart[x])
       ans[x][:count] = 1
     else
-      ans[x][:count] += 1
+      puts ans[x][:count]
     end
     
     x += 1
