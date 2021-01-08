@@ -23,11 +23,11 @@ def consolidate_cart(cart)
   ans = []
   x = 0
   cart.length.times do
-    temp = ans[x]
     if find_item_by_name_in_collection(cart[x][:item],ans) == nil
       ans.push(cart[x])
-      temp[:count] = 1
-    
+      ans[x][:count] = 1
+    else
+      puts ans[x][:count]
     end
     
     x += 1
