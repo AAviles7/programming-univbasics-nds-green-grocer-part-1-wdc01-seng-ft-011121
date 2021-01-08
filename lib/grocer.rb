@@ -3,6 +3,10 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
+  x = 0
+  collection.length.times do
+    
+  
 end
 
 def consolidate_cart(cart)
