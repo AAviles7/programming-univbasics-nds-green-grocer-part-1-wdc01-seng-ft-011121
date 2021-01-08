@@ -5,7 +5,8 @@ def find_item_by_name_in_collection(name, collection)
   
   x = 0
   collection.length.times do
-    
+    if collection[x][:item] == name
+      
   
 end
 
