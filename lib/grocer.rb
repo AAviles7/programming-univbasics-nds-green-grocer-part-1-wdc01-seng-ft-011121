@@ -26,13 +26,13 @@ def consolidate_cart(cart)
     if find_item_by_name_in_collection(cart[x][:item],ans) == nil
       ans.push(cart[x])
       ans[x][:count] = 1
-    else
-      ans[x].each do |k,v|
-        if k==:count
-          v += 1
-        end
+    end
+    ans[x].each do |k,v|
+      if k==:count
+        v += 1
       end
     end
+    
     x += 1
   end
   return ans
