@@ -26,7 +26,8 @@ def consolidate_cart(cart)
     if !(ans.include?(cart[x]))
       ans.push(cart[x])
     end
-    if (cart[x][:item],ans)
+    if find_item_by_name_in_collection(cart[x][:item],ans) != nil
+      ans[x][:count] = cnt
     x += 1
   end
   
