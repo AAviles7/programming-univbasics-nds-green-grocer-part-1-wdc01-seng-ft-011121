@@ -24,10 +24,16 @@ def consolidate_cart(cart)
   x = 0
   cart.length.times do
     if find_item_by_name_in_collection(cart[x][:item],ans) == nil
+      cart[x][:count] = 1
       ans.push(cart[x])
-      ans[x][:count] = 1
     else
-      ans[x][:count] += 1
+      y = 0
+      ans.length.times do
+        if ans[y]==cart[x]
+          ans[y][:count] += 1
+        end
+        y += 1
+      end
     end
     x += 1
   end
