@@ -32,7 +32,7 @@ def consolidate_cart(cart)
     end
     x += 1
   end
-  
+  return ans
     
 end
 
