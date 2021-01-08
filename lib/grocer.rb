@@ -30,7 +30,7 @@ def consolidate_cart(cart)
       y = 0
       ans.length.times do
         if ans[y]==cart[x]
-          ans[y][:count] += 0
+          ans[y][:count] += 1
         end
         y += 1
       end
