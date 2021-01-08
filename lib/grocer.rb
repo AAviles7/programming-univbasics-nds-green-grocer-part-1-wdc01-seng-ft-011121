@@ -28,7 +28,7 @@ def consolidate_cart(cart)
       ans[x][:count] = 1
     end
     if find_item_by_name_in_collection(cart[x][:item],ans) != nil
-      ans[x][:count]++
+      ans[x][:count] += 1
     end
     x += 1
   end
