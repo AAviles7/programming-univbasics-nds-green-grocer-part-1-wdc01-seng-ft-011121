@@ -26,7 +26,7 @@ def consolidate_cart(cart)
     if !(ans.include?(cart[x]))
       ans.push(cart[x])
     end
-    if (cart[x][:item],ans
+    if (cart[x][:item],ans)
     x += 1
   end
   
