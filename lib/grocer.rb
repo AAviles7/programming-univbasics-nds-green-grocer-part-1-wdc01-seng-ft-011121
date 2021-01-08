@@ -27,7 +27,11 @@ def consolidate_cart(cart)
       ans.push(cart[x])
       ans[x][:count] = 1
     else
-      ans[x][:count] = 2
+      ans[x].each do |k,v|
+        if k==:count
+          v += 1
+        end
+      end
     end
     x += 1
   end
