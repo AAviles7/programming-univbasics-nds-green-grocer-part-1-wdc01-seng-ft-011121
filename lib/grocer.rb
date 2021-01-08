@@ -23,10 +23,13 @@ def consolidate_cart(cart)
   ans = []
   x = 0
   cart.length.times do
-    cnt = 1
-    if !ans.include?(cart[x])
+    if !(ans.include?(cart[x]))
       ans.push(cart[x])
-      ans[x][:count] = cnt
+    end
+    if (cart[x][:item],ans
+    x += 1
+  end
+  
     
 end
 
