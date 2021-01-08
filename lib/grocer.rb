@@ -6,7 +6,11 @@ def find_item_by_name_in_collection(name, collection)
   x = 0
   collection.length.times do
     if collection[x][:item] == name
-      
+      return collection[x]
+    end
+    x += 1
+  end
+  return nil
   
 end
 
@@ -15,6 +19,8 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
+  
+  
   
 end
 
